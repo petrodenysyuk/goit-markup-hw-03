@@ -285,12 +285,6 @@ color: var(--ocean, #404bbf);
     padding-bottom: 100px;
 
 }
-.footer-inner {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-
-}
 
 .footer-logo {
     color: var(--cloud, #f4f4fd);
@@ -298,8 +292,9 @@ color: var(--ocean, #404bbf);
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
+    padding-bottom: 16px;
 }
 
 .footer-text {
@@ -336,6 +331,7 @@ color: var(--ocean, #404bbf);
             font-weight: 500;
             line-height: 1.2;
             letter-spacing: 0.02em;
+            margin-bottom: 8px;
 }
 
 .products-desc {
@@ -356,7 +352,6 @@ color: var(--ocean, #404bbf);
 .product-content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     align-self: stretch;
     align-items: flex-start;
     justify-content: center;
