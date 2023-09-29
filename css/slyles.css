@@ -8,6 +8,7 @@
     --white: #FFF;
     --green: #31d0aa;
     --lightslate: #8E8F99;
+    --cornflower: #e7e9fc;
 
 }
 /* -------------Body----------------- */
@@ -18,11 +19,47 @@ body {
 
     background-color: var(--white);
 }
+.container {
+    width: 100%;
+    max-width: 1158px; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    margin: 0 auto;
+    align-items: center;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.title {
+    padding-bottom: 72px;
+}
+/* ---------reset start----------- */
 .link {
     text-decoration: none;
 }
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* ---------reset end------------- */
 /* -----------Header------------ */
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--cornflower);
+}
 .header-logo{
     color: var(--iris, #4d5ae5);
         font-family: 'Raleway', sans-serif;
@@ -35,12 +72,25 @@ body {
 }
 .logo {
     color: var(--navyblue, #2e2f42);
+    margin-right: 76px;
 
 }
 .list{
     list-style: none;
 }
+.nav-list {
+    display: flex;
+    align-items: center;
+
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
 .header-list {
+    display: flex;
+    gap: 40px;
+    
 
 }
 .header-item {
@@ -63,9 +113,13 @@ body {
         letter-spacing: 0.02em;
 }
 .header-contacts {
-
-font-style: normal;
-
+    font-style: normal;
+    margin-left: auto;
+}
+.contacts-list {
+    display: flex;
+    gap:40px;
+    
 }
 .contacts-link {
     color: var(--slate, #434455);
@@ -83,6 +137,12 @@ color: var(--ocean, #404bbf);
 /* ------------Hero------------- */
 .hero {
     background: var(--navyblue, #2E2F42);
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+}
+.hero-inner {
+
 }
 
 .hero-title {
@@ -92,6 +152,11 @@ color: var(--ocean, #404bbf);
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+    
 }
 
 .hero-button {
@@ -104,6 +169,13 @@ color: var(--ocean, #404bbf);
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
+        display: block;
+        border: none;
+        border-radius: 4px;
+        min-width: 169px;
+        height: 56px;
+        margin: 0 auto;
+
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -116,12 +188,42 @@ color: var(--ocean, #404bbf);
         letter-spacing: 0.04em;
 }
 /* -----------Advantages----------------- */
+.advantages {
+    
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.advantages-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-start;
+    flex-basis: calc((100% - 72px) / 4);
+}
 .advantages-subtitle {
     color: var(--navyblue, #2E2F42);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
 }
 
 .advantages-desc {
@@ -132,7 +234,10 @@ color: var(--ocean, #404bbf);
         letter-spacing: 0.02em;
 }
 /* ----------Applications----------------- */
-
+.applications {
+    padding-bottom: 120px;
+    
+}
 
 .applications-title {
     color: var(--navyblue, #2e2f42);
@@ -142,13 +247,17 @@ color: var(--ocean, #404bbf);
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-
-
+    text-align: center;
+}
+.applications-list {
+    display: flex;
+    gap: 24px;
 }
 
 /* ------------Team------------------ */
 .team {
     background-color: var(--cloud);
+    
 }
 
 .team-title {
@@ -159,16 +268,32 @@ color: var(--ocean, #404bbf);
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-item {
     background-color: var(--white);
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-
+.team-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 32px;
+}
 
 .team-name {
     color: var(--navyblue, #2e2f42);
@@ -187,6 +312,15 @@ color: var(--ocean, #404bbf);
 /* -------------Footer------------------ */
 .footer {
     background-color: var(--navyblue, #2e2f42);
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.footer-inner {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
 }
 
 .footer-logo {
@@ -195,14 +329,17 @@ color: var(--ocean, #404bbf);
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    display: inline-flex;
+    align-items: center;
 }
 
 .footer-text {
     color: var(--cloud, #f4f4fd);
     font-size: 16px;
-
+    max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
 }
 /* -----------Portfolio-------------- */
 
@@ -220,6 +357,12 @@ color: var(--ocean, #404bbf);
             font-weight: 500;
             line-height: 1.2;
             letter-spacing: 0.02em;
+            display: flex;
+            gap: 24px;
+            margin-bottom: 72px;
+            align-items: center;
+            justify-content: center;
+
 }
 
 .filter-btn {
@@ -231,6 +374,10 @@ color: var(--ocean, #404bbf);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+    display: flex;
+    padding: 12px 24px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -238,7 +385,12 @@ color: var(--ocean, #404bbf);
     background-color: var(--ocean, #404bbf);
 }
 
-
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+}
 
 .products-subtitle {
         color: var(--navyblue, #2E2F42);
@@ -254,4 +406,25 @@ color: var(--ocean, #404bbf);
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.products-item {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    
+
+}
+.product-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: 0;
+
+
 }
