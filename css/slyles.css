@@ -272,6 +272,7 @@ color: var(--ocean, #404bbf);
 
 .team-item {
     background-color: var(--white);
+    display: flex;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
