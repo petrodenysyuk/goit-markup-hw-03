@@ -56,8 +56,7 @@ img {
 /* ---------reset end------------- */
 /* -----------Header------------ */
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
     border-bottom: 1px solid var(--cornflower);
 }
 .header-logo{
@@ -81,6 +80,7 @@ img {
 .nav-list {
     display: flex;
     align-items: center;
+            
 
 }
 .header-container {
@@ -90,8 +90,9 @@ img {
 .header-list {
     display: flex;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     
-
 }
 
 .header-nav-link {
@@ -101,6 +102,7 @@ img {
         line-height: 1.5;
         letter-spacing: 0.02em;
         text-decoration: none;
+
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
@@ -150,29 +152,27 @@ color: var(--ocean, #404bbf);
     letter-spacing: 0.02em;
     max-width: 496px;
     margin: 0 auto;
-    margin-bottom: 48px;
-
-    
+    margin-bottom: 48px;   
 }
 
 .hero-button {
     color: var(--white, #FFF);
     background: var(--iris, #4D5AE5);
     cursor: pointer;
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        display: block;
-        border: none;
-        border-radius: 4px;
-        min-width: 169px;
-        height: 56px;
-        margin: 0 auto;
-
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
 }
+
 .hero-button:hover,
 .hero-button:focus {
     color: var(--white, #FFF);
