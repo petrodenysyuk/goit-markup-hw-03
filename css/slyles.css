@@ -226,31 +226,6 @@ color: var(--ocean, #404bbf);
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
-/* ----------Applications----------------- */
-.applications {
-    padding: 120px 0;
-}
-
-.applications-title {
-    color: var(--navyblue, #2e2f42);
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 72px;
-}
-.applications-list {
-    display: flex;
-    gap: 24px;
-}
-.applications-item {
-    display: flex;
-    width: calc((100% - 48px) / 3);
-}
-
 
 /* ------------Team------------------ */
 .team {
@@ -278,7 +253,7 @@ color: var(--ocean, #404bbf);
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -339,45 +314,14 @@ color: var(--ocean, #404bbf);
 
 .portfolio-title {
         color: var(--navyblue, #2e2f42);
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 36px;
+            font-weight: 700;
             line-height: 1.2;
             letter-spacing: 0.02em;
-}
-
-.filter-list {
-        color: var(--navyblue, #2e2f42);
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 1.2;
-            letter-spacing: 0.02em;
-            display: flex;
-            gap: 24px;
             margin-bottom: 72px;
-            align-items: center;
-            justify-content: center;
-
+            text-align: center;
 }
 
-.filter-btn {
-    color: var(--iris, #4d5ae5);
-    background-color: var(--cloud, #f4f4fd);
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    border: 1px solid var(--cornflower);
-    border-radius: 4px;
-    display: flex;
-    padding: 12px 24px;
-}
-.filter-btn:hover,
-.filter-btn:focus {
-    color: var(--white);
-    background-color: var(--ocean, #404bbf);
-}
 
 .products-list {
     display: flex;
