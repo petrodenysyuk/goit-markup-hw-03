@@ -91,9 +91,6 @@ img {
     display: flex;
     gap: 40px;
 }
-.header-item {
-    
-}
 
 .header-nav-link {
     color: var(--navyblue, #2E2F42);
@@ -210,7 +207,6 @@ color: var(--ocean, #404bbf);
 .advantages-item {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     justify-content: flex-start;
     flex-basis: calc((100% - 72px) / 4);
 }
@@ -220,7 +216,7 @@ color: var(--ocean, #404bbf);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-
+    margin-bottom: 8px;
 }
 
 .advantages-desc {
@@ -232,8 +228,7 @@ color: var(--ocean, #404bbf);
 }
 /* ----------Applications----------------- */
 .applications {
-    padding-bottom: 120px;
-    
+    padding: 120px 0;
 }
 
 .applications-title {
@@ -245,16 +240,20 @@ color: var(--ocean, #404bbf);
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 72px;
 }
 .applications-list {
     display: flex;
     gap: 24px;
 }
+.applications-item {
+
+}
 
 /* ------------Team------------------ */
 .team {
     background-color: var(--cloud);
-    
+    padding: 120px 0;
 }
 
 .team-title {
@@ -266,6 +265,7 @@ color: var(--ocean, #404bbf);
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -275,21 +275,16 @@ color: var(--ocean, #404bbf);
 
 .team-item {
     background-color: var(--white);
-    display: flex;
-    gap: 32px;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 32px;
+    padding: 32px 0;
 }
 
 .team-name {
@@ -297,7 +292,10 @@ color: var(--ocean, #404bbf);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
+}
 
 .team-desc {
         color: var(--slate, #434455);
@@ -305,6 +303,7 @@ color: var(--ocean, #404bbf);
 
             line-height: 1.5;
             letter-spacing: 0.02em;
+            text-align: center;
 }
 /* -------------Footer------------------ */
 .footer {
