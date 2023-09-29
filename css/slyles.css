@@ -93,9 +93,7 @@ img {
     
 
 }
-.header-item {
 
-}
 .header-nav-link {
     color: var(--navyblue, #2E2F42);
     font-size: 16px;
@@ -141,9 +139,7 @@ color: var(--ocean, #404bbf);
     padding-bottom: 188px;
 
 }
-.hero-inner {
 
-}
 
 .hero-title {
     color: var(--white, #FFF);
@@ -188,9 +184,7 @@ color: var(--ocean, #404bbf);
         letter-spacing: 0.04em;
 }
 /* -----------Advantages----------------- */
-.advantages {
-    
-}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
