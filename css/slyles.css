@@ -246,9 +246,7 @@ color: var(--ocean, #404bbf);
     display: flex;
     gap: 24px;
 }
-.applications-item {
 
-}
 
 /* ------------Team------------------ */
 .team {
@@ -264,7 +262,6 @@ color: var(--ocean, #404bbf);
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
     margin-bottom: 72px;
 }
 
@@ -294,12 +291,11 @@ color: var(--ocean, #404bbf);
 }
 
 .team-desc {
-        color: var(--slate, #434455);
-            font-size: 16px;
-
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            text-align: center;
+    color: var(--slate, #434455);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 /* -------------Footer------------------ */
 .footer {
